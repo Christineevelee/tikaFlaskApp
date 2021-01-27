@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puppy Network Data Search</title>
+    <meta name="description" content="Search the Puppy Data.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tika.css') }}">
+      
+</head>
+</head>
+<body>
+<div class="box300"> 
+	<img src="{{url_for('static', filename='images/barleythepup.jpg')}}" align="left" alt="Puppy" width="60" height="70" />
+	<h1>Puppy Atlas Search</h1>
+<div id="maincontainer">
+    <div class= "search">
+      <p>Enter Tags to Search:</p>
+      <input type="text" name="search" placeholder="Enter Key Word Search">
+      <button>Search</button>
+</div>
+    <div "second">    
+    <br>
+    <h3>Search Results:</h3>
+    <div>
+    <table>
+        <thead>
+            <tr>
+                <th>File Path</th>
+                <th>File Name</th>
+                <th>Content</th>
+                <th>Meta Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>C:\c.pdf</td>
+                <td>C.Pdf</td>
+                <td>Sample Content Data</td>
+                <td>Sample Meta Data</td>                
+            </tr>
+            <tr>
+               <td>C:\user\dst2\Sample.pdf</td>
+                <td>Sample.pdf</td>
+                <td>This is sample Content 2</td>
+                <td>This is sample Meta Data 2</td>
+            </tr>
+            <tr>
+                <td>C:\user\dst2\cats.txt</td>
+                <td>cats.txt</td>
+                <td>This is sample Content data 3</td>
+                <td>This is sample Meta data 3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    </div>
+</div>    
+</div>
+</body>
+</html>
